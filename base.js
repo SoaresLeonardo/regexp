@@ -20,14 +20,33 @@ const arquivos = [
   "lista de compras.txt",
 ];
 
-const alfabeto = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz ®¡ 0123456789 ¡';
+const alfabeto =
+  "ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz ®¡ 0123456789 ¡";
 
-const html = '<p>Olá mundo</p> <p>Olá de novo</p> <div>Sou a div</div>';
+const html = "<p>Olá mundo</p> <p>Olá de novo</p> <div>Sou a div</div>";
 
+const cpfs = `
+Os CPFs são:
+  254.224.877-45 215.978.456-12 047.258.369-96 
+
+`;
+
+const ips = `
+Os Ips são:
+   0.0.0.0
+   192.168.0.25
+   255.255.255.255
+`;
+
+// 963.987.321-00
+// 963.987.32a.00 (NÃO VÁLIDO)
+// 963.987.32-00 (NÃO VÁLIDO)
 
 module.exports = {
   texto,
   arquivos,
   html,
   alfabeto,
+  cpfs,
+  ips,
 };
